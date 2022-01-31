@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bloom">
         <activity
+            android:name=".details"
+            android:exported="true" />
+        <activity
             android:name=".Mainwindow"
             android:exported="true" />
         <activity

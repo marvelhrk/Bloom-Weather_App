@@ -31,9 +31,20 @@ public class MainActivity extends AppCompatActivity {
 
         new Handler().postDelayed(() -> {
 
+                SharedPreferences sharedPreferences = getSharedPreferences(welcome.PREFS_NAME,0);
+            boolean hasloggedin = sharedPreferences.getBoolean("hasloggedin",false);
+            if(hasloggedin)
+            {
+                Intent homeintent = new Intent(MainActivity.this, Mainwindow.class);
+                startActivity(homeintent);
+                finish();
+            }
+            else{
                 Intent homeintent = new Intent(MainActivity.this, welcome.class);
                 startActivity(homeintent);
                 finish();
+            }
+
 
         },SPLASH_TIME_OUT);
         image = findViewById(R.id.imageView);

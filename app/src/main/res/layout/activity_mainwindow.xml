@@ -58,6 +58,7 @@
                 android:textColor="#535353"
                 android:textColorHint="#838282"
                 android:textSize="15dp" />
+
             <ImageView
                 android:id="@+id/city"
                 android:layout_width="match_parent"
@@ -65,94 +66,109 @@
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
                 android:src="@drawable/city"
-                />
-
-        <LinearLayout
-            android:id="@+id/mainwindow1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="gone"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/citynam"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/roboto_condensed_bold"
-                android:text="Rudrapur"
-                android:textColor="@color/white"
-                android:textSize="35dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:fontFamily="@font/roboto_medium"
-                android:text="CURRENTLY"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
+                android:visibility="visible" />
 
             <LinearLayout
+                android:id="@+id/mainwindow1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="-15dp"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:visibility="gone">
 
                 <TextView
-                    android:id="@+id/temp"
+                    android:id="@+id/citynam"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:fontFamily="@font/roboto"
-                    android:text="27"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:text="Rudrapur"
                     android:textColor="@color/white"
-                    android:textSize="100sp" />
+                    android:textSize="35dp" />
 
                 <TextView
-                    android:id="@+id/cityname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="-50dp"
+                    android:layout_marginLeft="20dp"
                     android:fontFamily="@font/roboto_medium"
-                    android:paddingRight="20dp"
-                    android:text="°c"
+                    android:text="CURRENTLY"
                     android:textColor="@color/white"
-                    android:textSize="30sp" />
+                    android:textSize="18sp" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    android:orientation="vertical">
+                    android:layout_marginTop="-15dp"
+                    android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/desc"
+                        android:id="@+id/temp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto_medium"
-                        android:text="Cloudy"
-                        android:textColor="@color/white"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/flike"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
                         android:fontFamily="@font/roboto"
-                        android:text="Feels like 4°c"
-
+                        android:text="27"
                         android:textColor="@color/white"
-                        android:textSize="20sp" />
+                        android:textSize="100sp" />
+
+                    <TextView
+                        android:id="@+id/cityname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-50dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:paddingRight="20dp"
+                        android:text="°c"
+                        android:textColor="@color/white"
+                        android:textSize="30sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Cloudy"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/flike"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:text="Feels like 4°c"
+
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+
                 </LinearLayout>
-
-
             </LinearLayout>
         </LinearLayout>
 
-
-        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/knowmore"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/whitebutton"
+            android:drawableLeft="@drawable/list"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:paddingLeft="35dp"
+            android:paddingRight="40dp"
+            android:text="MORE details"
+            android:textColor="#FFFFFF"
+            android:visibility="gone" />
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

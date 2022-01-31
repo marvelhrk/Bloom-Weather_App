@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.app.DownloadManager;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
@@ -13,6 +14,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -37,6 +39,7 @@ TextView cityn,temp,s,dec,feel;
 ImageView background,cit;
 LinearLayout weath;
 Dialog dialog2;
+Button knowmore;
     String description;
 
     @Override
@@ -92,6 +95,9 @@ Dialog dialog2;
         cit = findViewById(R.id.city);
         dialog2 = new Dialog(this);
         feel = findViewById(R.id.flike);
+        knowmore = findViewById(R.id.knowmore);
+
+
 
 
 
@@ -140,13 +146,25 @@ Dialog dialog2;
                 
                 weath.setVisibility(View.VISIBLE);
                 background.setVisibility(View.VISIBLE);
+                knowmore.setVisibility(View.VISIBLE);
                 cit.setVisibility(View.GONE);
 
-                if(description.equalsIgnoreCase("Smoke") || description.equalsIgnoreCase("Clouds") || description.equalsIgnoreCase("Haze") || description.equalsIgnoreCase("Rain"))
+
+                if(description.equalsIgnoreCase("Smoke") || description.equalsIgnoreCase("Clouds") || description.equalsIgnoreCase("Haze") || description.equalsIgnoreCase("Rain")|| description.equalsIgnoreCase("Fog"))
                 {background.setImageResource(R.drawable.cloudy);}
                 else
                 {background.setImageResource(R.drawable.sunny);}
                 dialog2.dismiss();
+
+                knowmore.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(Mainwindow.this, details.class);
+                        intent.putExtra("city_url", url);
+                        startActivity(intent);
+
+                    }
+                });
             }
         }, new Response.ErrorListener() {
             @Override
