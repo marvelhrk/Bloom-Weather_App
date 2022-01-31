@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".details">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/night1"
+            tools:ignore="ContentDescription" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="35dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/dmain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/buttongrey"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <LinearLayout
+                        android:id="@+id/mainwindow1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/dcitynam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:text="Rudrapur"
+                            android:textColor="@color/white"
+                            android:textSize="35dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="CURRENTLY"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-15dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/dtemp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-5dp"
+                                android:fontFamily="@font/roboto"
+                                android:text="27"
+                                android:textColor="@color/white"
+                                android:textSize="100sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-45dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:paddingRight="20dp"
+                                android:text="°c"
+                                android:textColor="@color/white"
+                                android:textSize="30sp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/ddesc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="40dp"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:text="Cloudy"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/dflike"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="Feels like 4°c"
+
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dmain1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dmain"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/buttongrey"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity=""
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/roboto_condensed_bold"
+                        android:text="Coordinates"
+                        android:textColor="@color/white"
+                        android:textSize="29sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity=""
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Longitude"
+                            android:textColor="@color/white"
+                            android:textSize="19sp" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/longitude"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity=""
+                            android:layout_marginLeft="50dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Latitude"
+                            android:textColor="@color/white"
+                            android:textSize="19sp" />
+
+                        <ImageView
+                            android:layout_width="59dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/latitude"></ImageView>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/dlon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity=""
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="-18dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="79.6548"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/dlat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity=""
+                        android:layout_marginLeft="190dp"
+                        android:layout_marginTop="-21dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="58.5468"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dmain2"
+                    android:layout_width="354dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dmain1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/buttongrey"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity=""
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Max Temp"
+                            android:textColor="@color/white"
+                            android:textSize="19sp" />
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/tempmax"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity=""
+                            android:layout_marginLeft="50dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Min Temp"
+                            android:textColor="@color/white"
+                            android:textSize="19sp" />
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/tempmin"></ImageView>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/dmax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity=""
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="-25dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="16°c"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/dmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity=""
+                        android:layout_marginLeft="200dp"
+                        android:layout_marginTop="-22dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="16°c"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/dmain3"
+                    android:layout_width="344dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dmain2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/buttongrey"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity=""
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Pressure"
+                                android:textColor="@color/white"
+                                android:textSize="19sp" />
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/meter"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity=""
+                                android:layout_marginLeft="40dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Humidity"
+                                android:textColor="@color/white"
+                                android:textSize="19sp" />
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/humidity"></ImageView>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/dpressur"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity=""
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="-18dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="1600 hpa"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/dhumi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity=""
+                            android:layout_marginLeft="189dp"
+                            android:layout_marginTop="-20dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="16 %"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity=""
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Sea Lvl"
+                                android:textColor="@color/white"
+                                android:textSize="19sp" />
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="28dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/sea"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity=""
+                                android:layout_marginLeft="40dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Ground Lvl"
+                                android:textColor="@color/white"
+                                android:textSize="19sp" />
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="10dp"
+
+                                android:src="@drawable/layers"></ImageView>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/dsea"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity=""
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="-20dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="Nfsd"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/dground"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity=""
+                            android:layout_marginLeft="190dp"
+                            android:layout_marginTop="-20dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="safsa"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dmain3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/buttongrey"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:paddingHorizontal="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity=""
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:text="Wind"
+                            android:textColor="@color/white"
+                            android:textSize="29sp" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity=""
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Speed"
+                                android:textColor="@color/white"
+                                android:textSize="19sp" />
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="18dp"
+                                android:src="@drawable/speedometer"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity=""
+                                android:layout_marginLeft="60dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Direction"
+                                android:textColor="@color/white"
+                                android:textSize="19sp" />
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/directions"></ImageView>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/dwinspeed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity=""
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="-15dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="16 m/s"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/dwindir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity=""
+                            android:layout_marginLeft="180dp"
+                            android:layout_marginTop="-20dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="16 %"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity=""
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Gust"
+                                android:textColor="@color/white"
+                                android:textSize="19sp" />
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="35dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/gust"></ImageView>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/dwingust"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity=""
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="-20dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="16 hpa"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dmain5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dmain"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/buttongrey"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity=""
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/roboto_condensed_bold"
+                        android:text="Time"
+                        android:textColor="@color/white"
+                        android:textSize="29sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity=""
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Sunrise"
+                            android:textColor="@color/white"
+                            android:textSize="19sp" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/sunrise"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity=""
+                            android:layout_marginLeft="80dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Sunset"
+                            android:textColor="@color/white"
+                            android:textSize="19sp" />
+
+                        <ImageView
+                            android:layout_width="59dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/sunsets"></ImageView>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/dsunrise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity=""
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="-18dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="79.6548"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/dsunset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity=""
+                        android:layout_marginLeft="205dp"
+                        android:layout_marginTop="-21dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="58.5468"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
