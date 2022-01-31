@@ -32,7 +32,7 @@
 Discover a reliable, real-time forecast that will always warn you about upcoming severe weather. Weather Underground combines data from OpenWeatherMap weather stations and a proprietary forecast model to give you the most accurate and forecasts, at a microclimate level. Discover about current conditions, get customizable severe weather alerts and much more. You’ll always be prepared for whatever the weather brings.
 
 <p align="center">
- <img src="screenshot-1.jpg" alt="Logo" width="278" height="580">     <img src="screenshot-2.jpg" alt="Logo" width="278" height="580">      
+ <img src="s1.png" alt="Logo" width="284" height="628">     <img src="s2.png" alt="Logo" width="284" height="628">      
 </p>
 
 Hourly weather updates.
