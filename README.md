@@ -1,6 +1,6 @@
 <div align="center">
   <a>
-    <img src="app/src/main/res/drawable/logoalfred.png" alt="Logo" width="283" height="184">
+    <img src="bloom.png" alt="Logo" width="291" height="126">
   </a>
 
   <h3 align="center">Bloom</h3>
@@ -29,43 +29,25 @@
 
 
 
-Do you like to watch movies online and spend a lot of time looking for something interesting? Then you should pay attention to the Alfred application. It will help you choose the best movies or series.
+Discover a reliable, real-time forecast that will always warn you about upcoming severe weather. Weather Underground combines data from OpenWeatherMap weather stations and a proprietary forecast model to give you the most accurate and forecasts, at a microclimate level. Discover about current conditions, get customizable severe weather alerts and much more. You’ll always be prepared for whatever the weather brings.
 
 <p align="center">
  <img src="screenshot-1.jpg" alt="Logo" width="278" height="580">     <img src="screenshot-2.jpg" alt="Logo" width="278" height="580">      
 </p>
 
-The movies that are collected here will last you a long time. The collection is updated with new films and recognized masterpieces of past years. Regardless of who you are – a fan of energetic action movies or a fan of youth series. The plenty of the catalog will make you forget about all the other ways of spending leisure time.
+Hourly weather updates.
+- See hourly updates for the weather with temperature, wind speed
+- Useful Widgets to see important information on your homescreen
 
-In this application, you will find many interesting movie reviews. Reviews are written by real users who have already watched the selected movie or series.
-
-The choice of movies is very wide and diverse. So everyone will find something interesting for themselves, whatever their tastes. This is the golden classic of Hollywood and soulful French comedies.
-
-In the application catalog you will find reviews of films of any genres:
-
-• love
-
-•	detective
-
-•	action movie
-
-•	western
-
-•	fantasy
-
-•	art house
-
-•	comedy
-
-•	films about the war
-
-•	horror
-
-•	thriller
-
-•	documentaries
-
-The app Alfred also provides reviews of short films, as well as TV shows. Are you interested in the most iconic films in a particular genre? The search system will help you navigate and find the necessary review.
+Other features:
+- Sunrise sunset timings
+- Rain forecast
+- Fog forecast
+- Wind speed and direction updates
+- Real Feel temperature updates
+- Atmospheric pressure
+- Humdity
+- Ground level and Sea level
 
 
 <!-- MORE DETAILS -->
